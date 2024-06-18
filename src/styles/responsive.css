@@ -1,0 +1,764 @@
+/* Mini Tablet Size Responsive */
+@media screen and (min-width: 480px) {
+	section {
+		padding: 60px 50px;
+	}
+
+	.list-consultant {
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	}
+
+	.content-card {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.content-card .description {
+		align-items: start;
+	}
+
+	.content-card .description h5 {
+		text-align: left;
+	}
+
+	.action-card {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.container.detail-consultant {
+		grid-template-columns: 100% 0%;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	.why-us .container .row {
+		gap: 0;
+	}
+
+	/* Transaction */
+	.transaction-container {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+
+		grid-column-start: 1;
+		grid-column-end: 3;
+
+		padding: 0 50px;
+		background-color: #ffffff;
+	}
+
+	.payment-container div form {
+		display: grid;
+		grid-template-columns: 30px 1fr 1fr;
+
+		margin: 10px;
+	}
+
+	.payment-container div form img {
+		width: 50px;
+	}
+
+	div.e-wallet {
+		border-radius: 5px;
+		padding: 10px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+		margin-bottom: 5px;
+	}
+
+	div.virtual-account {
+		border-radius: 5px;
+		padding: 10px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+		margin-bottom: 5px;
+	}
+
+	div.credit-card {
+		grid-row-start: 3;
+		border-radius: 5px;
+		padding: 10px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+		margin-bottom: 5px;
+	}
+
+	/* Reciept min 480px*/
+	.reciept-container {
+		display: grid;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		border-radius: 5px;
+		margin-left: 0px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+		height: fit-content;
+	}
+
+	.reciept-container form input {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		width: 100%;
+		padding: 12px 20px;
+		margin: 12px;
+		display: inline-block;
+		border: 4px solid #2b8e8e;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-size: 1em;
+	}
+
+	.container-profile>img {
+		justify-self: center;
+		width: 80px;
+		height: 80px;
+	}
+
+	.detail-container {
+		padding: 10px;
+	}
+
+	.detail-container img {
+		height: 100px;
+		width: 100px;
+	}
+
+	.detail-container div.button {
+		grid-column-start: 3;
+		justify-self: end;
+	}
+
+	/* Booking Page 480px */
+	.schedule-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* ============================================== */
+
+	/* Start Footer */
+	.footer-links .link {
+		justify-content: left;
+		text-align: left;
+	}
+
+	/* End Footer */
+}
+
+/* Tablet Size Responsive */
+@media screen and (min-width: 640px) {
+	/* Start Header */
+
+	header {
+		padding: 0px 50px;
+	}
+
+	header .user-account {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	header section.main-nav .logo>a {
+		font-size: 28px;
+	}
+
+	header nav {
+		max-width: fit-content;
+		margin-inline: auto;
+		gap: 80px;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 10px;
+		border-radius: 20px;
+		align-items: center;
+		padding-top: 15px;
+	}
+
+	header nav li a {
+		font-weight: 600;
+		color: var(--main-color);
+		font-size: 18px;
+	}
+
+	button.menu-bar {
+		display: none;
+	}
+
+	/* End Header */
+
+	/* ============================================== */
+
+	/* Start Main */
+
+	main {
+		padding-top: 100px;
+	}
+
+	/* Start Section Autentication Register Page and Login Page */
+
+	section.autentication {
+		padding: 50px;
+	}
+
+	.container.autentication form {
+		order: 1;
+	}
+
+	.container.autentication .ilustration {
+		order: 2;
+	}
+
+	.container.autentication .ilustration img {
+		border-radius: 0px 20px 20px 0;
+	}
+
+	section.consultants {
+		padding: 50px;
+	}
+
+	.list-consultant {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	/* End Section Autentication Register Page and Login Page */
+
+	/* Booking 640px */
+	.booking-container {
+		padding: 20px 50px;
+	}
+
+	.container-profile div.price {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		width: 100%;
+	}
+
+	.container-profile div.rating-star-experience {
+		justify-content: flex-start;
+	}
+
+	/* Start Detail Page 640px */
+	.container-profile {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+
+	.container-profile>h1:first-child {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		justify-self: flex-start;
+	}
+
+	.container-profile>img {
+		grid-column-start: 1;
+		grid-row-start: 2;
+		grid-row-end: 6;
+		justify-self: center;
+		align-self: center;
+		width: 100px;
+		height: 100px;
+	}
+
+	.container-profile h1 {
+		justify-self: flex-start;
+	}
+
+	.container-profile>h2 {
+		justify-self: flex-start;
+	}
+
+	.container-profile h2.practicePlace {
+		justify-self: flex-start;
+	}
+
+	section.detail-consultant {
+		background-color: var(--body-color);
+		padding: 50px;
+	}
+
+	.container,
+	.container-sm {
+		max-width: 540px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.align-items-center {
+		align-items: center !important;
+	}
+
+	.detail-container {
+		padding: 10px;
+	}
+
+	.detail-container img {
+		height: 100px;
+		width: 100px;
+		object-fit: cover;
+	}
+
+	/* End Detail */
+
+	/* Start Reciept */
+
+	.reciept-container {
+		padding: 20px;
+	}
+
+	.reciept-container p {
+		font-size: 0.8rem;
+	}
+
+	div.continue-button button {
+		width: 100%;
+	}
+
+	/* End Reciept */
+	/* End Main */
+
+	/* ============================================== */
+
+	/* Start Footer */
+
+	footer {
+		padding: 50px;
+	}
+
+	section.main-footer {
+		flex-direction: row;
+		text-align: left;
+		grid-template-columns: 30% 70%;
+	}
+
+	.company {
+		text-align: left;
+	}
+
+	.company .social-media ul {
+		justify-content: left;
+		margin-top: 10px;
+	}
+
+	.footer-links {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	}
+
+	section.copyright {
+		margin-top: 50px;
+	}
+}
+
+/* Desktop Size Responsive */
+@media screen and (min-width: 1024px) {
+
+	/* Start Header */
+	header .search {
+		width: 100%;
+		height: 100%;
+		max-width: 500px;
+		display: inline;
+	}
+
+	/* End Header */
+
+	/* ============================================== */
+
+	/* Start Section Home Page */
+	section.hero {
+		margin-bottom: -30vh;
+		height: 90vh;
+	}
+
+	.hero .content {
+		padding: 50px;
+	}
+
+	.hero .content .button {
+		gap: 30px;
+	}
+
+	.hero .content .information h1 {
+		font-size: 32px;
+	}
+
+	.container.detail-consultant {
+		grid-template-columns: 70% 30%;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 auto;
+		width: 33.33333333%;
+	}
+
+	.col-lg-6 {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+
+	.col-lg-8 {
+		flex: 0 0 auto;
+		width: 66.66666667%;
+	}
+
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm {
+		max-width: 960px;
+	}
+
+	.px-lg-5 {
+		padding-left: 3rem !important;
+	}
+
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
+		max-width: 1140px;
+	}
+
+	.align-items-center {
+		align-items: center !important;
+	}
+
+	.col-xl-4 {
+		flex: 0 0 auto;
+		width: 33.33333333%;
+	}
+
+	.col-xl-5 {
+		flex: 0 0 auto;
+		width: 41.66666667%;
+		max-width: 1200px;
+	}
+
+	.col-xl-7 {
+		flex: 0 0 auto;
+		width: 58.33333333%;
+	}
+
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: 1320px;
+	}
+
+	/* End Section Home Page */
+
+	/* Andika */
+	/* Booking PAGE min 1024px*/
+	/* Start Booking Page */
+	.booking-container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 10px;
+		border-radius: 5px;
+		background-color: #ffffff;
+		padding: 20px 50px;
+	}
+
+	input[type="date"],
+	input[type="time"],
+	select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 4px solid #2b8e8e;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-size: 1em;
+	}
+
+	input[type="submit"] {
+		width: 100%;
+		background-color: #2b8e8e;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #279595;
+	}
+
+	.booking {
+		border-radius: 5px;
+		padding: 20px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+	}
+
+	h1.lable-booking {
+		background-color: #ffffff;
+		padding: 20px;
+	}
+
+	.selected-profile {
+		border-radius: 5px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+	}
+
+	.container-profile * {
+		margin: 8px 0;
+	}
+
+	.container-profile>h1 {
+		font-size: 1rem;
+		text-align: start;
+	}
+
+	.container-profile>h2 {
+		font-size: 1em;
+		text-align: start;
+	}
+
+	.container-profile>div {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+
+	.container-profile>img {
+		justify-self: center;
+		width: 100px;
+		height: 100px;
+	}
+
+	.container-profile>div>h1 {
+		font-size: 1.2em;
+		align-self: center;
+		margin: 0 10px;
+	}
+
+	.container-profile div.price {
+		border: solid 3px #2b8e8e;
+		border-radius: 5px;
+		font-size: 1.3em;
+		display: flex;
+		justify-content: center;
+		color: #2b8e8e;
+		padding: 5px 0;
+	}
+
+	.container-profile div.rating-star-experience {
+		grid-template-columns: auto 1fr;
+		align-items: center;
+	}
+
+	/* Schedule 1024 */
+	.schedule-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* End Booking Page */
+
+	/* Transaction 1024px*/
+	.transaction-container {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+
+		grid-column-start: 1;
+		grid-column-end: 3;
+
+		padding: 0 50px;
+		background-color: #ffffff;
+	}
+
+	.payment-container div form {
+		display: grid;
+		grid-template-columns: 30px 1fr 1fr;
+	}
+
+	div.e-wallet {
+		border-radius: 5px;
+		padding: 10px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+		margin-bottom: 5px;
+	}
+
+	div.virtual-account {
+		border-radius: 5px;
+		padding: 10px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+		margin-bottom: 5px;
+	}
+
+	div.credit-card {
+		grid-row-start: 3;
+		border-radius: 5px;
+		padding: 10px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+		margin-bottom: 5px;
+	}
+
+	/* Reciept min 1024px*/
+	.reciept-container {
+		display: grid;
+		grid-column-start: 2;
+		grid-column-end: 3;
+
+		grid-row-start: 1;
+		grid-row-end: 5;
+		border-radius: 5px;
+		margin-left: 20px;
+		margin-top: 0;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 5px 3px #eee;
+
+		min-height: 50vh;
+		height: fit-content;
+		min-width: 300px;
+	}
+
+	.reciept-container form input {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		width: 100%;
+		padding: 12px 20px;
+		margin: 12px;
+		display: inline-block;
+		border: 4px solid #2b8e8e;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-size: 1em;
+	}
+
+	/* detail min 1024px*/
+	.detail-container {
+		grid-column-start: 1;
+		grid-column-end: 2;
+
+		height: 30vh;
+		padding: 30px 20px;
+	}
+
+	.detail-container img {
+		grid-row-start: 1;
+		grid-row-end: 5;
+
+		grid-column-start: 1;
+		grid-column-end: 2;
+		align-self: center;
+		justify-self: center;
+		height: 130px;
+		width: 130px;
+		margin: 10px;
+	}
+
+	.detail-container h1 {
+		font-size: 1.1rem;
+	}
+
+	.detail-container p.specialist {
+		grid-column-start: 2;
+		grid-column-end: 3;
+
+		color: #2b8e8e;
+		font-size: 1.1rem;
+	}
+
+	.detail-container p.price {
+		grid-column-start: 2;
+		grid-column-end: 3;
+
+		color: #2b8e8e;
+		font-size: 1.3rem;
+	}
+
+	.detail-container div.rating {
+		grid-column-start: 2;
+		grid-column-end: 3;
+
+		display: flex;
+		font-size: 1rem;
+	}
+
+	.detail-container div.rating div {
+		margin-right: 30px;
+	}
+
+	.detail-container div.button a button {
+		font-size: 1.1rem;
+		width: 80px;
+		position: relative;
+		bottom: -20px;
+	}
+
+	/* Payment min 1024px*/
+	.payment-label {
+		grid-column-start: 1;
+		grid-column-end: 2;
+
+		margin: 20px 0;
+		font-size: 0.7rem;
+	}
+
+	.payment-container {
+		grid-column-start: 1;
+		grid-column-end: 2;
+
+		display: grid;
+		grid-template-rows: auto;
+	}
+
+	.payment-container div form div {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.payment-container div form p {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.payment-container div form {
+		height: 300px;
+		font-size: 1rem;
+		margin: 20px;
+	}
+
+	div.e-wallet form input,
+	div.virtual-account form input,
+	div.credit-card form input {
+		width: 20px;
+		justify-self: center;
+	}
+
+	.payment-container div form label {
+		align-self: center;
+		margin-left: 20px;
+	}
+
+	.payment-container div form img {
+		justify-self: end;
+		width: 60px;
+		max-height: 75px;
+	}
+
+	.label.payment {
+		font-weight: bold;
+	}
+
+	/* ============================================== */
+
+	/* Start Footer */
+	.footer-links .link {
+		justify-content: center;
+	}
+
+	/* End Footer */
+}

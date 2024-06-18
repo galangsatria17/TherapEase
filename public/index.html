@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="dicoding:email" content="bagusnararyanandaraditya@gmail.com" />
+
+  <link rel="icon" href="./favicon.png" />
+
+  <script src="https://kit.fontawesome.com/d9838cfb82.js" crossorigin="anonymous"></script>
+
+  <title>TherapEase</title>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header id="headerContent">
+    <section class="main-nav">
+      <h2 class="logo"><a href="#/home-page">TherapEase</a></h2>
+      <nav id="mobile-menu">
+        <li><a href="#/home-page">Beranda</a></li>
+        <li><a href="#/list-consultant-page">Konsultan</a></li>
+        <li><a href="#/article-page">Artikel & Berita</a></li>
+        <li><a href="#/about-page">Tentang</a></li>
+      </nav>
+      <div class="user-account">
+        <div class="user-profile">
+          <a href=""><img src="https://img.icons8.com/bubbles/50/user.png" alt="user" /></a>
+        </div>
+        <form action="http://localhost:5000/logout?_method=DELETE" method="POST">
+          <button type="submit" class="logout-user">Log Out</button>
+        </form>
+      </div>
+      <button class="menu-bar" id="menu-bar"
+        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        aria-label="Main Menu">
+        <svg viewBox="0 0 100 100">
+          <path class="line line-1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line-2" d="M 20,50 H 80" />
+          <path class="line line-3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+    </section>
+  </header>
+  <!-- Header Section -->
+
+  <!-- Main Section -->
+  <main id="mainContent"></main>
+  <!-- Main Section -->
+
+  <!-- Footer Section  -->
+  <footer id="footerContent">
+    <section class="main-footer">
+      <div class="company">
+        <h2>TherapEase</h2>
+        <div class="newsletter">
+          <input type="search" id="search" placeholder="youremail@example.com" />
+          <label for="search">Masukkan email Anda untuk berlangganan bersama kami dan dapatkan
+            informasi terbaru dari kami</label>
+        </div>
+        <div class="social-media">
+          <b>Ikuti sosial media kami</b>
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="link">
+          <h4>Fitur</h4>
+          <li><a href="">Artikel</a></li>
+          <li><a href="">Chat Dokter</a></li>
+          <li><a href="">Forum</a></li>
+          <li><a href="">Riviews</a></li>
+        </div>
+        <div class="link">
+          <h4>Perusahaan</h4>
+          <li><a href="">Tentang Kami</a></li>
+          <li><a href="">Karir</a></li>
+          <li><a href="">Kontak</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Histori</a></li>
+          <li><a href="">Program</a></li>
+        </div>
+        <div class="link">
+          <h4>Dukungan</h4>
+          <li><a href="">Syarat dan Ketentuan</a></li>
+          <li><a href="">Kebijakan Privasi</a></li>
+          <li><a href="">Kebijakan Editorial</a></li>
+          <li><a href="">Pusat Bantuan</a></li>
+          <li><a href="">Donasi</a></li>
+        </div>
+        <div class="link">
+          <h4>Daftar Mitra</h4>
+          <li><a href="">Merchant</a></li>
+          <li><a href="">Faskes Mitra</a></li>
+          <li><a href="">TherapEase</a></li>
+          <li><a href="">Operasional</a></li>
+        </div>
+      </div>
+    </section>
+    <section class="copyright">
+      <h5>&copy; 2024 TherapEase copyright</h5>
+    </section>
+  </footer>
+  <!-- Footer Section  -->
+</body>
+
+</html>
